@@ -4,7 +4,7 @@ const web3 = new Web3();
 const WalletProvider = require("truffle-wallet-provider");
 const Wallet = require('ethereumjs-wallet');
 
-var mainnetKeystore = require('fs').readFileSync('./keystore/mainnet/UTC--2017-12-21T11-47-19.754430712Z--da238d03b67ecd0dfe4857372ec295b172b013aa').toString();
+var mainnetKeystore = require('fs').readFileSync('./keystore/mainnet/UTC--2017-12-21T12-10-44.828095721Z--da238d03b67ecd0dfe4857372ec295b172b013aa').toString();
 var mainnetPass = require('fs').readFileSync('./keystore/mainnet.pass').toString();
 var mainnetWallet = Wallet.fromV3(mainnetKeystore, mainnetPass)
 var mainnetProvider = new WalletProvider(mainnetWallet, "https://mainnet.infura.io/");
